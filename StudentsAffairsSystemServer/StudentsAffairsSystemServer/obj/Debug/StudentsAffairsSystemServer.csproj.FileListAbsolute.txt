@@ -1,0 +1,6 @@
+c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\bin\StudentsAffairsSystemServer.dll.config
+c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\bin\StudentsAffairsSystemServer.dll
+c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\bin\StudentsAffairsSystemServer.pdb
+c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.csprojResolveAssemblyReference.cache
+c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.dll
+c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.pdb

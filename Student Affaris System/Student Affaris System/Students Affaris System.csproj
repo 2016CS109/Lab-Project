@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40D597CD-9B75-49CE-9B69-15A520282C22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Student_Affaris_System</RootNamespace>
+    <AssemblyName>Student Affaris System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRPageAfterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRPageAfterLogin.Designer.cs">
+      <DependentUpon>CRPageAfterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPageAfterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPageAfterLogin.Designer.cs">
+      <DependentUpon>AdminPageAfterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveRequestsTeachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveRequestsTeachers.Designer.cs">
+      <DependentUpon>ApproveRequestsTeachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveRequestsStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveRequestsStudents.Designer.cs">
+      <DependentUpon>ApproveRequestsStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterationCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterationCategory.Designer.cs">
+      <DependentUpon>RegisterationCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRegisterationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRegisterationForm.Designer.cs">
+      <DependentUpon>TeacherRegisterationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsRegisterationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsRegisterationForm.Designer.cs">
+      <DependentUpon>StudentsRegisterationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginPage.Designer.cs">
+      <DependentUpon>UserLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPageAfterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentPageAfterLogin.Designer.cs">
+      <DependentUpon>StudentPageAfterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherPageAfterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherPageAfterLogin.Designer.cs">
+      <DependentUpon>TeacherPageAfterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\StudentsAffairsSystemServer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRPageAfterLogin.resx">
+      <DependentUpon>CRPageAfterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPageAfterLogin.resx">
+      <DependentUpon>AdminPageAfterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveRequestsTeachers.resx">
+      <DependentUpon>ApproveRequestsTeachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveRequestsStudents.resx">
+      <DependentUpon>ApproveRequestsStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterationCategory.resx">
+      <DependentUpon>RegisterationCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRegisterationForm.resx">
+      <DependentUpon>TeacherRegisterationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsRegisterationForm.resx">
+      <DependentUpon>StudentsRegisterationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginPage.resx">
+      <DependentUpon>UserLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentPageAfterLogin.resx">
+      <DependentUpon>StudentPageAfterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherPageAfterLogin.resx">
+      <DependentUpon>TeacherPageAfterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\StudentsAffairsSystemServer\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StudentsAffairsSystemServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StudentsAffairsSystemServer\Service1.wsdl" />
+    <None Include="Web References\StudentsAffairsSystemServer\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\StudentsAffairsSystemServer\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\StudentsAffairsSystemServer\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:1760/Service1.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StudentsAffairsSystemServer\</RelPath>
+      <UpdateFromURL>http://localhost:1760/Service1.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Student_Affaris_System_StudentsAffairsSystemServer_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\StudentsAffairsSystemServer\Service1.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
