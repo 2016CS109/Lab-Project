@@ -4,3 +4,9 @@ c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSys
 c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.csprojResolveAssemblyReference.cache
 c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.dll
 c:\users\muhammad awais\documents\visual studio 2015\Projects\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.pdb
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\StudentsAffairsSystemServer\StudentsAffairsSystemServer\bin\StudentsAffairsSystemServer.dll.config
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\StudentsAffairsSystemServer\StudentsAffairsSystemServer\bin\StudentsAffairsSystemServer.dll
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\StudentsAffairsSystemServer\StudentsAffairsSystemServer\bin\StudentsAffairsSystemServer.pdb
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.csprojResolveAssemblyReference.cache
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.dll
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\StudentsAffairsSystemServer\StudentsAffairsSystemServer\obj\Debug\StudentsAffairsSystemServer.pdb

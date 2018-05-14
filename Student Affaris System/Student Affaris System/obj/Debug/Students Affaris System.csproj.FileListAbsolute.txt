@@ -38,3 +38,31 @@ C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\Student Affaris Sy
 C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\bin\Debug\Student Affaris System.exe.config
 C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student Affaris System.exe
 C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student Affaris System.pdb
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\bin\Debug\Student Affaris System.exe
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\bin\Debug\Student Affaris System.pdb
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Students Affaris System.csprojResolveAssemblyReference.cache
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.AboutUs.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.HomePage.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.CRPageAfterLogin.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.AdminPageAfterLogin.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.ApproveRequestsTeachers.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.ApproveRequestsStudents.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.AdminLogin.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.RegisterationCategory.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.TeacherRegisterationForm.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.StudentsRegisterationForm.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.UserLoginPage.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.StudentPageAfterLogin.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.ResetPassword.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.TeacherPageAfterLogin.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.Properties.Resources.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Students Affaris System.csproj.GenerateResource.Cache
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.AddAnnoucement.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.ViewAnnoucement.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.AllUploadedImages.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.UploadImages.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.UserControl1.resources
+C:\Users\Muhammad Awais\Documents\Visual Studio 2015\Projects\LAB PROJECT\Student Affaris System\Student Affaris System\obj\Debug\Student_Affaris_System.NewPassword.resources
+C:\Users\Muhammad Awais\Desktop\New folder (2)\Lab-Project\Student Affaris System\Student Affaris System\bin\Debug\Student Affaris System.exe.config
+C:\Users\Muhammad Awais\Desktop\New folder (2)\Lab-Project\Student Affaris System\Student Affaris System\obj\Debug\Student Affaris System.exe
+C:\Users\Muhammad Awais\Desktop\New folder (2)\Lab-Project\Student Affaris System\Student Affaris System\obj\Debug\Student Affaris System.pdb

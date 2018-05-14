@@ -16,14 +16,43 @@ namespace Student_Affaris_System
         {
             InitializeComponent();
         }
+      
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            BindingSource Source = new BindingSource();
+            Source.DataSource = StudentsAffairsSystem.SearchDeptteacher(comboBox5.Text);
+            dataGridView3.DataSource = Source;
+        }
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            BindingSource Source = new BindingSource();
+            Source.DataSource = StudentsAffairsSystem.SearchDeptteacher(comboBox5.Text);
+            dataGridView3.DataSource = Source;
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        }
+
+        private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void Form12_Load(object sender, EventArgs e)
+        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            StudentsAffairsSystem.AddApproveTeacherstoList(textBox1.Text);
+            textBox1.Text = null;
 
         }
 
@@ -32,6 +61,11 @@ namespace Student_Affaris_System
             AdminPageAfterLogin obj = new AdminPageAfterLogin();
             obj.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

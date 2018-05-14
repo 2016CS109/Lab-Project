@@ -28,5 +28,33 @@ namespace Student_Affaris_System
             obj.Show();
             this.Hide();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            BindingSource Source = new BindingSource();
+            Source.DataSource = StudentsAffairsSystem.SearchDeptstudent(comboBox1.Text);
+            dataGridView1.DataSource = Source;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            BindingSource Source = new BindingSource();
+            Source.DataSource = StudentsAffairsSystem.SearchDeptstudent(comboBox1.Text);
+            dataGridView1.DataSource = Source;
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            StudentsAffairsSystem.AddApproveStudentstoList(textBox1.Text);
+            textBox1.Text = null;
+        }
     }
 }

@@ -5,6 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Collections;
+using System.Drawing;
 
 namespace StudentsAffairsSystemServer
 {
@@ -13,12 +15,67 @@ namespace StudentsAffairsSystemServer
     public interface IService1
     {
         [OperationContract]
-        void StudentRegister(string username, string password, string emailid, string contactnumber, string registerationnumber, string studentcategory, string section, string secretquestions, string answer);
+        void StudentRegister(string username, string password, string emailid, string contactnumber, string department, string registerationnumber, string studentcategory, string section, string secretquestions, string answer);
         [OperationContract]
         void TeacherRegister(string username, string password, string emailid, string contactnumber, string department, string secretquestions, string answer);
         [OperationContract]
+        void TeacherInfo(string username, string emailid, string contactnumber, string department);
+        [OperationContract]
+        void StudentInfo(string username, string emailid, string contactnumber, string section, string department, string registerationnumber, string studentcategory);
+        [OperationContract]
+        List<InformationTeacher> SearchDeptteacher(string department);
+        [OperationContract]
+        List<InformationStudent> SearchDeptstudent(string department);
+        [OperationContract]
+        void AddAnnoucementstolist(string annoucementtext);
+        [OperationContract]
+        string viewannoucements();
+        [OperationContract]
+        int isvalidstudent(string username, string password);
+        [OperationContract]
+        int isvalidteacher(string username, string password);
+        [OperationContract]
+        void addimages(byte[] img);
+        [OperationContract]
+        ArrayList listofimages();
+        [OperationContract]
+        void AddStudentDeptTeacherstoList(string username);
+        [OperationContract]
+        List<InformationTeacher> ShowStudentDeptTeachers();
+        [OperationContract]
+        void AddTeachersDeptStudentstoList(string username);
+        [OperationContract]
+        List<InformationStudent> ShowTeachersDeptStudents();
+        [OperationContract]
+        void AddApproveTeacherstoList(string username);
+        [OperationContract]
+        bool CheckApproveTeachers(string username);
+        [OperationContract]
+        void AddApproveStudentstoList(string username);
+        [OperationContract]
+        bool CheckApproveStudents(string username);
+        [OperationContract]
+        void ResetTeachersPasswordList(string username);
+        [OperationContract]
+        void ResetStudentsPasswordList(string username);
+        [OperationContract]
+        bool ChkTeachersSecretQuest(string secretquestions, string answer);
+        [OperationContract]
+        bool ChkStudentsSecretQuest(string secretquestions, string answer);
+        [OperationContract]
+        void NewTeachersPassword(string newpassword);
+        [OperationContract]
+        void NewStudentsPassword(string newpassword);
+        [OperationContract]
+        void AddTeacherstoProfileList(string username);
+        [OperationContract]
+        void AddStudentstoProfileList(string username);
+        [OperationContract]
+        List<InformationTeacher> SpecificTeachersProfile();
+        [OperationContract]
+        List<InformationStudent> SpecificStudentsProfile();
+        [OperationContract]
         string GetData(int value);
-
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 

@@ -21,8 +21,85 @@ namespace Student_Affaris_System
         {
 
         }
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            HomePage obj = new HomePage();
+            obj.Show();
+            this.Hide();
+        }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ViewAnnoucement obj = new ViewAnnoucement();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UploadImages obj = new UploadImages();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+            List<StudentsAffairsSystemServer.InformationStudent> obj1 = new List<StudentsAffairsSystemServer.InformationStudent>();
+            obj1 = StudentsAffairsSystem.SpecificStudentsProfile().ToList();
+            foreach (StudentsAffairsSystemServer.InformationStudent obj in obj1)
+            {
+                textBox1.Text =  obj.UserName;
+                textBox3.Text = obj.ContactNumber;
+                textBox7.Text = obj.Department;
+                textBox2.Text = obj.EmailId;
+                textBox4.Text = obj.RegisterationNumber;
+                textBox6.Text = obj.Section;
+                textBox5.Text = obj.StudentCategory;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
         }

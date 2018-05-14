@@ -27,11 +27,68 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(object[]))]
     public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         private System.Threading.SendOrPostCallback StudentRegisterOperationCompleted;
         
         private System.Threading.SendOrPostCallback TeacherRegisterOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TeacherInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback StudentInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SearchDeptteacherOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SearchDeptstudentOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddAnnoucementstolistOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback viewannoucementsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback isvalidstudentOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback isvalidteacherOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback addimagesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback listofimagesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddStudentDeptTeacherstoListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ShowStudentDeptTeachersOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddTeachersDeptStudentstoListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ShowTeachersDeptStudentsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddApproveTeacherstoListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CheckApproveTeachersOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddApproveStudentstoListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CheckApproveStudentsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ResetTeachersPasswordListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ResetStudentsPasswordListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ChkTeachersSecretQuestOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ChkStudentsSecretQuestOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback NewTeachersPasswordOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback NewStudentsPasswordOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddTeacherstoProfileListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddStudentstoProfileListOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SpecificTeachersProfileOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SpecificStudentsProfileOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
         
@@ -82,6 +139,90 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
         public event TeacherRegisterCompletedEventHandler TeacherRegisterCompleted;
         
         /// <remarks/>
+        public event TeacherInfoCompletedEventHandler TeacherInfoCompleted;
+        
+        /// <remarks/>
+        public event StudentInfoCompletedEventHandler StudentInfoCompleted;
+        
+        /// <remarks/>
+        public event SearchDeptteacherCompletedEventHandler SearchDeptteacherCompleted;
+        
+        /// <remarks/>
+        public event SearchDeptstudentCompletedEventHandler SearchDeptstudentCompleted;
+        
+        /// <remarks/>
+        public event AddAnnoucementstolistCompletedEventHandler AddAnnoucementstolistCompleted;
+        
+        /// <remarks/>
+        public event viewannoucementsCompletedEventHandler viewannoucementsCompleted;
+        
+        /// <remarks/>
+        public event isvalidstudentCompletedEventHandler isvalidstudentCompleted;
+        
+        /// <remarks/>
+        public event isvalidteacherCompletedEventHandler isvalidteacherCompleted;
+        
+        /// <remarks/>
+        public event addimagesCompletedEventHandler addimagesCompleted;
+        
+        /// <remarks/>
+        public event listofimagesCompletedEventHandler listofimagesCompleted;
+        
+        /// <remarks/>
+        public event AddStudentDeptTeacherstoListCompletedEventHandler AddStudentDeptTeacherstoListCompleted;
+        
+        /// <remarks/>
+        public event ShowStudentDeptTeachersCompletedEventHandler ShowStudentDeptTeachersCompleted;
+        
+        /// <remarks/>
+        public event AddTeachersDeptStudentstoListCompletedEventHandler AddTeachersDeptStudentstoListCompleted;
+        
+        /// <remarks/>
+        public event ShowTeachersDeptStudentsCompletedEventHandler ShowTeachersDeptStudentsCompleted;
+        
+        /// <remarks/>
+        public event AddApproveTeacherstoListCompletedEventHandler AddApproveTeacherstoListCompleted;
+        
+        /// <remarks/>
+        public event CheckApproveTeachersCompletedEventHandler CheckApproveTeachersCompleted;
+        
+        /// <remarks/>
+        public event AddApproveStudentstoListCompletedEventHandler AddApproveStudentstoListCompleted;
+        
+        /// <remarks/>
+        public event CheckApproveStudentsCompletedEventHandler CheckApproveStudentsCompleted;
+        
+        /// <remarks/>
+        public event ResetTeachersPasswordListCompletedEventHandler ResetTeachersPasswordListCompleted;
+        
+        /// <remarks/>
+        public event ResetStudentsPasswordListCompletedEventHandler ResetStudentsPasswordListCompleted;
+        
+        /// <remarks/>
+        public event ChkTeachersSecretQuestCompletedEventHandler ChkTeachersSecretQuestCompleted;
+        
+        /// <remarks/>
+        public event ChkStudentsSecretQuestCompletedEventHandler ChkStudentsSecretQuestCompleted;
+        
+        /// <remarks/>
+        public event NewTeachersPasswordCompletedEventHandler NewTeachersPasswordCompleted;
+        
+        /// <remarks/>
+        public event NewStudentsPasswordCompletedEventHandler NewStudentsPasswordCompleted;
+        
+        /// <remarks/>
+        public event AddTeacherstoProfileListCompletedEventHandler AddTeacherstoProfileListCompleted;
+        
+        /// <remarks/>
+        public event AddStudentstoProfileListCompletedEventHandler AddStudentstoProfileListCompleted;
+        
+        /// <remarks/>
+        public event SpecificTeachersProfileCompletedEventHandler SpecificTeachersProfileCompleted;
+        
+        /// <remarks/>
+        public event SpecificStudentsProfileCompletedEventHandler SpecificStudentsProfileCompleted;
+        
+        /// <remarks/>
         public event GetDataCompletedEventHandler GetDataCompleted;
         
         /// <remarks/>
@@ -89,12 +230,13 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/StudentRegister", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void StudentRegister([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string emailid, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string contactnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string registerationnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string studentcategory, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string section, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string secretquestions, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string answer) {
+        public void StudentRegister([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string emailid, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string contactnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string department, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string registerationnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string studentcategory, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string section, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string secretquestions, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string answer) {
             this.Invoke("StudentRegister", new object[] {
                         username,
                         password,
                         emailid,
                         contactnumber,
+                        department,
                         registerationnumber,
                         studentcategory,
                         section,
@@ -103,12 +245,12 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
         }
         
         /// <remarks/>
-        public void StudentRegisterAsync(string username, string password, string emailid, string contactnumber, string registerationnumber, string studentcategory, string section, string secretquestions, string answer) {
-            this.StudentRegisterAsync(username, password, emailid, contactnumber, registerationnumber, studentcategory, section, secretquestions, answer, null);
+        public void StudentRegisterAsync(string username, string password, string emailid, string contactnumber, string department, string registerationnumber, string studentcategory, string section, string secretquestions, string answer) {
+            this.StudentRegisterAsync(username, password, emailid, contactnumber, department, registerationnumber, studentcategory, section, secretquestions, answer, null);
         }
         
         /// <remarks/>
-        public void StudentRegisterAsync(string username, string password, string emailid, string contactnumber, string registerationnumber, string studentcategory, string section, string secretquestions, string answer, object userState) {
+        public void StudentRegisterAsync(string username, string password, string emailid, string contactnumber, string department, string registerationnumber, string studentcategory, string section, string secretquestions, string answer, object userState) {
             if ((this.StudentRegisterOperationCompleted == null)) {
                 this.StudentRegisterOperationCompleted = new System.Threading.SendOrPostCallback(this.OnStudentRegisterOperationCompleted);
             }
@@ -117,6 +259,7 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
                         password,
                         emailid,
                         contactnumber,
+                        department,
                         registerationnumber,
                         studentcategory,
                         section,
@@ -168,6 +311,839 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
             if ((this.TeacherRegisterCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.TeacherRegisterCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/TeacherInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void TeacherInfo([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string emailid, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string contactnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string department) {
+            this.Invoke("TeacherInfo", new object[] {
+                        username,
+                        emailid,
+                        contactnumber,
+                        department});
+        }
+        
+        /// <remarks/>
+        public void TeacherInfoAsync(string username, string emailid, string contactnumber, string department) {
+            this.TeacherInfoAsync(username, emailid, contactnumber, department, null);
+        }
+        
+        /// <remarks/>
+        public void TeacherInfoAsync(string username, string emailid, string contactnumber, string department, object userState) {
+            if ((this.TeacherInfoOperationCompleted == null)) {
+                this.TeacherInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTeacherInfoOperationCompleted);
+            }
+            this.InvokeAsync("TeacherInfo", new object[] {
+                        username,
+                        emailid,
+                        contactnumber,
+                        department}, this.TeacherInfoOperationCompleted, userState);
+        }
+        
+        private void OnTeacherInfoOperationCompleted(object arg) {
+            if ((this.TeacherInfoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TeacherInfoCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/StudentInfo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void StudentInfo([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string emailid, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string contactnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string section, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string department, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string registerationnumber, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string studentcategory) {
+            this.Invoke("StudentInfo", new object[] {
+                        username,
+                        emailid,
+                        contactnumber,
+                        section,
+                        department,
+                        registerationnumber,
+                        studentcategory});
+        }
+        
+        /// <remarks/>
+        public void StudentInfoAsync(string username, string emailid, string contactnumber, string section, string department, string registerationnumber, string studentcategory) {
+            this.StudentInfoAsync(username, emailid, contactnumber, section, department, registerationnumber, studentcategory, null);
+        }
+        
+        /// <remarks/>
+        public void StudentInfoAsync(string username, string emailid, string contactnumber, string section, string department, string registerationnumber, string studentcategory, object userState) {
+            if ((this.StudentInfoOperationCompleted == null)) {
+                this.StudentInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnStudentInfoOperationCompleted);
+            }
+            this.InvokeAsync("StudentInfo", new object[] {
+                        username,
+                        emailid,
+                        contactnumber,
+                        section,
+                        department,
+                        registerationnumber,
+                        studentcategory}, this.StudentInfoOperationCompleted, userState);
+        }
+        
+        private void OnStudentInfoOperationCompleted(object arg) {
+            if ((this.StudentInfoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.StudentInfoCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/SearchDeptteacher", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+        public InformationTeacher[] SearchDeptteacher([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string department) {
+            object[] results = this.Invoke("SearchDeptteacher", new object[] {
+                        department});
+            return ((InformationTeacher[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SearchDeptteacherAsync(string department) {
+            this.SearchDeptteacherAsync(department, null);
+        }
+        
+        /// <remarks/>
+        public void SearchDeptteacherAsync(string department, object userState) {
+            if ((this.SearchDeptteacherOperationCompleted == null)) {
+                this.SearchDeptteacherOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSearchDeptteacherOperationCompleted);
+            }
+            this.InvokeAsync("SearchDeptteacher", new object[] {
+                        department}, this.SearchDeptteacherOperationCompleted, userState);
+        }
+        
+        private void OnSearchDeptteacherOperationCompleted(object arg) {
+            if ((this.SearchDeptteacherCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SearchDeptteacherCompleted(this, new SearchDeptteacherCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/SearchDeptstudent", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+        public InformationStudent[] SearchDeptstudent([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string department) {
+            object[] results = this.Invoke("SearchDeptstudent", new object[] {
+                        department});
+            return ((InformationStudent[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SearchDeptstudentAsync(string department) {
+            this.SearchDeptstudentAsync(department, null);
+        }
+        
+        /// <remarks/>
+        public void SearchDeptstudentAsync(string department, object userState) {
+            if ((this.SearchDeptstudentOperationCompleted == null)) {
+                this.SearchDeptstudentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSearchDeptstudentOperationCompleted);
+            }
+            this.InvokeAsync("SearchDeptstudent", new object[] {
+                        department}, this.SearchDeptstudentOperationCompleted, userState);
+        }
+        
+        private void OnSearchDeptstudentOperationCompleted(object arg) {
+            if ((this.SearchDeptstudentCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SearchDeptstudentCompleted(this, new SearchDeptstudentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddAnnoucementstolist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddAnnoucementstolist([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string annoucementtext) {
+            this.Invoke("AddAnnoucementstolist", new object[] {
+                        annoucementtext});
+        }
+        
+        /// <remarks/>
+        public void AddAnnoucementstolistAsync(string annoucementtext) {
+            this.AddAnnoucementstolistAsync(annoucementtext, null);
+        }
+        
+        /// <remarks/>
+        public void AddAnnoucementstolistAsync(string annoucementtext, object userState) {
+            if ((this.AddAnnoucementstolistOperationCompleted == null)) {
+                this.AddAnnoucementstolistOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddAnnoucementstolistOperationCompleted);
+            }
+            this.InvokeAsync("AddAnnoucementstolist", new object[] {
+                        annoucementtext}, this.AddAnnoucementstolistOperationCompleted, userState);
+        }
+        
+        private void OnAddAnnoucementstolistOperationCompleted(object arg) {
+            if ((this.AddAnnoucementstolistCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddAnnoucementstolistCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/viewannoucements", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string viewannoucements() {
+            object[] results = this.Invoke("viewannoucements", new object[0]);
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void viewannoucementsAsync() {
+            this.viewannoucementsAsync(null);
+        }
+        
+        /// <remarks/>
+        public void viewannoucementsAsync(object userState) {
+            if ((this.viewannoucementsOperationCompleted == null)) {
+                this.viewannoucementsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnviewannoucementsOperationCompleted);
+            }
+            this.InvokeAsync("viewannoucements", new object[0], this.viewannoucementsOperationCompleted, userState);
+        }
+        
+        private void OnviewannoucementsOperationCompleted(object arg) {
+            if ((this.viewannoucementsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.viewannoucementsCompleted(this, new viewannoucementsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/isvalidstudent", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void isvalidstudent([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, out int isvalidstudentResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool isvalidstudentResultSpecified) {
+            object[] results = this.Invoke("isvalidstudent", new object[] {
+                        username,
+                        password});
+            isvalidstudentResult = ((int)(results[0]));
+            isvalidstudentResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void isvalidstudentAsync(string username, string password) {
+            this.isvalidstudentAsync(username, password, null);
+        }
+        
+        /// <remarks/>
+        public void isvalidstudentAsync(string username, string password, object userState) {
+            if ((this.isvalidstudentOperationCompleted == null)) {
+                this.isvalidstudentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnisvalidstudentOperationCompleted);
+            }
+            this.InvokeAsync("isvalidstudent", new object[] {
+                        username,
+                        password}, this.isvalidstudentOperationCompleted, userState);
+        }
+        
+        private void OnisvalidstudentOperationCompleted(object arg) {
+            if ((this.isvalidstudentCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.isvalidstudentCompleted(this, new isvalidstudentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/isvalidteacher", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void isvalidteacher([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, out int isvalidteacherResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool isvalidteacherResultSpecified) {
+            object[] results = this.Invoke("isvalidteacher", new object[] {
+                        username,
+                        password});
+            isvalidteacherResult = ((int)(results[0]));
+            isvalidteacherResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void isvalidteacherAsync(string username, string password) {
+            this.isvalidteacherAsync(username, password, null);
+        }
+        
+        /// <remarks/>
+        public void isvalidteacherAsync(string username, string password, object userState) {
+            if ((this.isvalidteacherOperationCompleted == null)) {
+                this.isvalidteacherOperationCompleted = new System.Threading.SendOrPostCallback(this.OnisvalidteacherOperationCompleted);
+            }
+            this.InvokeAsync("isvalidteacher", new object[] {
+                        username,
+                        password}, this.isvalidteacherOperationCompleted, userState);
+        }
+        
+        private void OnisvalidteacherOperationCompleted(object arg) {
+            if ((this.isvalidteacherCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.isvalidteacherCompleted(this, new isvalidteacherCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/addimages", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void addimages([System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", IsNullable=true)] byte[] img) {
+            this.Invoke("addimages", new object[] {
+                        img});
+        }
+        
+        /// <remarks/>
+        public void addimagesAsync(byte[] img) {
+            this.addimagesAsync(img, null);
+        }
+        
+        /// <remarks/>
+        public void addimagesAsync(byte[] img, object userState) {
+            if ((this.addimagesOperationCompleted == null)) {
+                this.addimagesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnaddimagesOperationCompleted);
+            }
+            this.InvokeAsync("addimages", new object[] {
+                        img}, this.addimagesOperationCompleted, userState);
+        }
+        
+        private void OnaddimagesOperationCompleted(object arg) {
+            if ((this.addimagesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.addimagesCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/listofimages", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public object[] listofimages() {
+            object[] results = this.Invoke("listofimages", new object[0]);
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void listofimagesAsync() {
+            this.listofimagesAsync(null);
+        }
+        
+        /// <remarks/>
+        public void listofimagesAsync(object userState) {
+            if ((this.listofimagesOperationCompleted == null)) {
+                this.listofimagesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnlistofimagesOperationCompleted);
+            }
+            this.InvokeAsync("listofimages", new object[0], this.listofimagesOperationCompleted, userState);
+        }
+        
+        private void OnlistofimagesOperationCompleted(object arg) {
+            if ((this.listofimagesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.listofimagesCompleted(this, new listofimagesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddStudentDeptTeacherstoList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddStudentDeptTeacherstoList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("AddStudentDeptTeacherstoList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void AddStudentDeptTeacherstoListAsync(string username) {
+            this.AddStudentDeptTeacherstoListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void AddStudentDeptTeacherstoListAsync(string username, object userState) {
+            if ((this.AddStudentDeptTeacherstoListOperationCompleted == null)) {
+                this.AddStudentDeptTeacherstoListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddStudentDeptTeacherstoListOperationCompleted);
+            }
+            this.InvokeAsync("AddStudentDeptTeacherstoList", new object[] {
+                        username}, this.AddStudentDeptTeacherstoListOperationCompleted, userState);
+        }
+        
+        private void OnAddStudentDeptTeacherstoListOperationCompleted(object arg) {
+            if ((this.AddStudentDeptTeacherstoListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddStudentDeptTeacherstoListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ShowStudentDeptTeachers", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+        public InformationTeacher[] ShowStudentDeptTeachers() {
+            object[] results = this.Invoke("ShowStudentDeptTeachers", new object[0]);
+            return ((InformationTeacher[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ShowStudentDeptTeachersAsync() {
+            this.ShowStudentDeptTeachersAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ShowStudentDeptTeachersAsync(object userState) {
+            if ((this.ShowStudentDeptTeachersOperationCompleted == null)) {
+                this.ShowStudentDeptTeachersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnShowStudentDeptTeachersOperationCompleted);
+            }
+            this.InvokeAsync("ShowStudentDeptTeachers", new object[0], this.ShowStudentDeptTeachersOperationCompleted, userState);
+        }
+        
+        private void OnShowStudentDeptTeachersOperationCompleted(object arg) {
+            if ((this.ShowStudentDeptTeachersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ShowStudentDeptTeachersCompleted(this, new ShowStudentDeptTeachersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddTeachersDeptStudentstoList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddTeachersDeptStudentstoList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("AddTeachersDeptStudentstoList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void AddTeachersDeptStudentstoListAsync(string username) {
+            this.AddTeachersDeptStudentstoListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void AddTeachersDeptStudentstoListAsync(string username, object userState) {
+            if ((this.AddTeachersDeptStudentstoListOperationCompleted == null)) {
+                this.AddTeachersDeptStudentstoListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddTeachersDeptStudentstoListOperationCompleted);
+            }
+            this.InvokeAsync("AddTeachersDeptStudentstoList", new object[] {
+                        username}, this.AddTeachersDeptStudentstoListOperationCompleted, userState);
+        }
+        
+        private void OnAddTeachersDeptStudentstoListOperationCompleted(object arg) {
+            if ((this.AddTeachersDeptStudentstoListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddTeachersDeptStudentstoListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ShowTeachersDeptStudents", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+        public InformationStudent[] ShowTeachersDeptStudents() {
+            object[] results = this.Invoke("ShowTeachersDeptStudents", new object[0]);
+            return ((InformationStudent[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ShowTeachersDeptStudentsAsync() {
+            this.ShowTeachersDeptStudentsAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ShowTeachersDeptStudentsAsync(object userState) {
+            if ((this.ShowTeachersDeptStudentsOperationCompleted == null)) {
+                this.ShowTeachersDeptStudentsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnShowTeachersDeptStudentsOperationCompleted);
+            }
+            this.InvokeAsync("ShowTeachersDeptStudents", new object[0], this.ShowTeachersDeptStudentsOperationCompleted, userState);
+        }
+        
+        private void OnShowTeachersDeptStudentsOperationCompleted(object arg) {
+            if ((this.ShowTeachersDeptStudentsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ShowTeachersDeptStudentsCompleted(this, new ShowTeachersDeptStudentsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddApproveTeacherstoList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddApproveTeacherstoList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("AddApproveTeacherstoList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void AddApproveTeacherstoListAsync(string username) {
+            this.AddApproveTeacherstoListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void AddApproveTeacherstoListAsync(string username, object userState) {
+            if ((this.AddApproveTeacherstoListOperationCompleted == null)) {
+                this.AddApproveTeacherstoListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddApproveTeacherstoListOperationCompleted);
+            }
+            this.InvokeAsync("AddApproveTeacherstoList", new object[] {
+                        username}, this.AddApproveTeacherstoListOperationCompleted, userState);
+        }
+        
+        private void OnAddApproveTeacherstoListOperationCompleted(object arg) {
+            if ((this.AddApproveTeacherstoListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddApproveTeacherstoListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/CheckApproveTeachers", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void CheckApproveTeachers([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, out bool CheckApproveTeachersResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool CheckApproveTeachersResultSpecified) {
+            object[] results = this.Invoke("CheckApproveTeachers", new object[] {
+                        username});
+            CheckApproveTeachersResult = ((bool)(results[0]));
+            CheckApproveTeachersResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void CheckApproveTeachersAsync(string username) {
+            this.CheckApproveTeachersAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void CheckApproveTeachersAsync(string username, object userState) {
+            if ((this.CheckApproveTeachersOperationCompleted == null)) {
+                this.CheckApproveTeachersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckApproveTeachersOperationCompleted);
+            }
+            this.InvokeAsync("CheckApproveTeachers", new object[] {
+                        username}, this.CheckApproveTeachersOperationCompleted, userState);
+        }
+        
+        private void OnCheckApproveTeachersOperationCompleted(object arg) {
+            if ((this.CheckApproveTeachersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckApproveTeachersCompleted(this, new CheckApproveTeachersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddApproveStudentstoList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddApproveStudentstoList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("AddApproveStudentstoList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void AddApproveStudentstoListAsync(string username) {
+            this.AddApproveStudentstoListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void AddApproveStudentstoListAsync(string username, object userState) {
+            if ((this.AddApproveStudentstoListOperationCompleted == null)) {
+                this.AddApproveStudentstoListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddApproveStudentstoListOperationCompleted);
+            }
+            this.InvokeAsync("AddApproveStudentstoList", new object[] {
+                        username}, this.AddApproveStudentstoListOperationCompleted, userState);
+        }
+        
+        private void OnAddApproveStudentstoListOperationCompleted(object arg) {
+            if ((this.AddApproveStudentstoListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddApproveStudentstoListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/CheckApproveStudents", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void CheckApproveStudents([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, out bool CheckApproveStudentsResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool CheckApproveStudentsResultSpecified) {
+            object[] results = this.Invoke("CheckApproveStudents", new object[] {
+                        username});
+            CheckApproveStudentsResult = ((bool)(results[0]));
+            CheckApproveStudentsResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void CheckApproveStudentsAsync(string username) {
+            this.CheckApproveStudentsAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void CheckApproveStudentsAsync(string username, object userState) {
+            if ((this.CheckApproveStudentsOperationCompleted == null)) {
+                this.CheckApproveStudentsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheckApproveStudentsOperationCompleted);
+            }
+            this.InvokeAsync("CheckApproveStudents", new object[] {
+                        username}, this.CheckApproveStudentsOperationCompleted, userState);
+        }
+        
+        private void OnCheckApproveStudentsOperationCompleted(object arg) {
+            if ((this.CheckApproveStudentsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CheckApproveStudentsCompleted(this, new CheckApproveStudentsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ResetTeachersPasswordList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void ResetTeachersPasswordList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("ResetTeachersPasswordList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void ResetTeachersPasswordListAsync(string username) {
+            this.ResetTeachersPasswordListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void ResetTeachersPasswordListAsync(string username, object userState) {
+            if ((this.ResetTeachersPasswordListOperationCompleted == null)) {
+                this.ResetTeachersPasswordListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnResetTeachersPasswordListOperationCompleted);
+            }
+            this.InvokeAsync("ResetTeachersPasswordList", new object[] {
+                        username}, this.ResetTeachersPasswordListOperationCompleted, userState);
+        }
+        
+        private void OnResetTeachersPasswordListOperationCompleted(object arg) {
+            if ((this.ResetTeachersPasswordListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ResetTeachersPasswordListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ResetStudentsPasswordList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void ResetStudentsPasswordList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("ResetStudentsPasswordList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void ResetStudentsPasswordListAsync(string username) {
+            this.ResetStudentsPasswordListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void ResetStudentsPasswordListAsync(string username, object userState) {
+            if ((this.ResetStudentsPasswordListOperationCompleted == null)) {
+                this.ResetStudentsPasswordListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnResetStudentsPasswordListOperationCompleted);
+            }
+            this.InvokeAsync("ResetStudentsPasswordList", new object[] {
+                        username}, this.ResetStudentsPasswordListOperationCompleted, userState);
+        }
+        
+        private void OnResetStudentsPasswordListOperationCompleted(object arg) {
+            if ((this.ResetStudentsPasswordListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ResetStudentsPasswordListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ChkTeachersSecretQuest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void ChkTeachersSecretQuest([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string secretquestions, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string answer, out bool ChkTeachersSecretQuestResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool ChkTeachersSecretQuestResultSpecified) {
+            object[] results = this.Invoke("ChkTeachersSecretQuest", new object[] {
+                        secretquestions,
+                        answer});
+            ChkTeachersSecretQuestResult = ((bool)(results[0]));
+            ChkTeachersSecretQuestResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void ChkTeachersSecretQuestAsync(string secretquestions, string answer) {
+            this.ChkTeachersSecretQuestAsync(secretquestions, answer, null);
+        }
+        
+        /// <remarks/>
+        public void ChkTeachersSecretQuestAsync(string secretquestions, string answer, object userState) {
+            if ((this.ChkTeachersSecretQuestOperationCompleted == null)) {
+                this.ChkTeachersSecretQuestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnChkTeachersSecretQuestOperationCompleted);
+            }
+            this.InvokeAsync("ChkTeachersSecretQuest", new object[] {
+                        secretquestions,
+                        answer}, this.ChkTeachersSecretQuestOperationCompleted, userState);
+        }
+        
+        private void OnChkTeachersSecretQuestOperationCompleted(object arg) {
+            if ((this.ChkTeachersSecretQuestCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ChkTeachersSecretQuestCompleted(this, new ChkTeachersSecretQuestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ChkStudentsSecretQuest", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void ChkStudentsSecretQuest([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string secretquestions, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string answer, out bool ChkStudentsSecretQuestResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool ChkStudentsSecretQuestResultSpecified) {
+            object[] results = this.Invoke("ChkStudentsSecretQuest", new object[] {
+                        secretquestions,
+                        answer});
+            ChkStudentsSecretQuestResult = ((bool)(results[0]));
+            ChkStudentsSecretQuestResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void ChkStudentsSecretQuestAsync(string secretquestions, string answer) {
+            this.ChkStudentsSecretQuestAsync(secretquestions, answer, null);
+        }
+        
+        /// <remarks/>
+        public void ChkStudentsSecretQuestAsync(string secretquestions, string answer, object userState) {
+            if ((this.ChkStudentsSecretQuestOperationCompleted == null)) {
+                this.ChkStudentsSecretQuestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnChkStudentsSecretQuestOperationCompleted);
+            }
+            this.InvokeAsync("ChkStudentsSecretQuest", new object[] {
+                        secretquestions,
+                        answer}, this.ChkStudentsSecretQuestOperationCompleted, userState);
+        }
+        
+        private void OnChkStudentsSecretQuestOperationCompleted(object arg) {
+            if ((this.ChkStudentsSecretQuestCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ChkStudentsSecretQuestCompleted(this, new ChkStudentsSecretQuestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/NewTeachersPassword", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void NewTeachersPassword([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string newpassword) {
+            this.Invoke("NewTeachersPassword", new object[] {
+                        newpassword});
+        }
+        
+        /// <remarks/>
+        public void NewTeachersPasswordAsync(string newpassword) {
+            this.NewTeachersPasswordAsync(newpassword, null);
+        }
+        
+        /// <remarks/>
+        public void NewTeachersPasswordAsync(string newpassword, object userState) {
+            if ((this.NewTeachersPasswordOperationCompleted == null)) {
+                this.NewTeachersPasswordOperationCompleted = new System.Threading.SendOrPostCallback(this.OnNewTeachersPasswordOperationCompleted);
+            }
+            this.InvokeAsync("NewTeachersPassword", new object[] {
+                        newpassword}, this.NewTeachersPasswordOperationCompleted, userState);
+        }
+        
+        private void OnNewTeachersPasswordOperationCompleted(object arg) {
+            if ((this.NewTeachersPasswordCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.NewTeachersPasswordCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/NewStudentsPassword", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void NewStudentsPassword([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string newpassword) {
+            this.Invoke("NewStudentsPassword", new object[] {
+                        newpassword});
+        }
+        
+        /// <remarks/>
+        public void NewStudentsPasswordAsync(string newpassword) {
+            this.NewStudentsPasswordAsync(newpassword, null);
+        }
+        
+        /// <remarks/>
+        public void NewStudentsPasswordAsync(string newpassword, object userState) {
+            if ((this.NewStudentsPasswordOperationCompleted == null)) {
+                this.NewStudentsPasswordOperationCompleted = new System.Threading.SendOrPostCallback(this.OnNewStudentsPasswordOperationCompleted);
+            }
+            this.InvokeAsync("NewStudentsPassword", new object[] {
+                        newpassword}, this.NewStudentsPasswordOperationCompleted, userState);
+        }
+        
+        private void OnNewStudentsPasswordOperationCompleted(object arg) {
+            if ((this.NewStudentsPasswordCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.NewStudentsPasswordCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddTeacherstoProfileList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddTeacherstoProfileList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("AddTeacherstoProfileList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void AddTeacherstoProfileListAsync(string username) {
+            this.AddTeacherstoProfileListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void AddTeacherstoProfileListAsync(string username, object userState) {
+            if ((this.AddTeacherstoProfileListOperationCompleted == null)) {
+                this.AddTeacherstoProfileListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddTeacherstoProfileListOperationCompleted);
+            }
+            this.InvokeAsync("AddTeacherstoProfileList", new object[] {
+                        username}, this.AddTeacherstoProfileListOperationCompleted, userState);
+        }
+        
+        private void OnAddTeacherstoProfileListOperationCompleted(object arg) {
+            if ((this.AddTeacherstoProfileListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddTeacherstoProfileListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddStudentstoProfileList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddStudentstoProfileList([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username) {
+            this.Invoke("AddStudentstoProfileList", new object[] {
+                        username});
+        }
+        
+        /// <remarks/>
+        public void AddStudentstoProfileListAsync(string username) {
+            this.AddStudentstoProfileListAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void AddStudentstoProfileListAsync(string username, object userState) {
+            if ((this.AddStudentstoProfileListOperationCompleted == null)) {
+                this.AddStudentstoProfileListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddStudentstoProfileListOperationCompleted);
+            }
+            this.InvokeAsync("AddStudentstoProfileList", new object[] {
+                        username}, this.AddStudentstoProfileListOperationCompleted, userState);
+        }
+        
+        private void OnAddStudentstoProfileListOperationCompleted(object arg) {
+            if ((this.AddStudentstoProfileListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddStudentstoProfileListCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/SpecificTeachersProfile", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+        public InformationTeacher[] SpecificTeachersProfile() {
+            object[] results = this.Invoke("SpecificTeachersProfile", new object[0]);
+            return ((InformationTeacher[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SpecificTeachersProfileAsync() {
+            this.SpecificTeachersProfileAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SpecificTeachersProfileAsync(object userState) {
+            if ((this.SpecificTeachersProfileOperationCompleted == null)) {
+                this.SpecificTeachersProfileOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSpecificTeachersProfileOperationCompleted);
+            }
+            this.InvokeAsync("SpecificTeachersProfile", new object[0], this.SpecificTeachersProfileOperationCompleted, userState);
+        }
+        
+        private void OnSpecificTeachersProfileOperationCompleted(object arg) {
+            if ((this.SpecificTeachersProfileCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SpecificTeachersProfileCompleted(this, new SpecificTeachersProfileCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/SpecificStudentsProfile", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+        public InformationStudent[] SpecificStudentsProfile() {
+            object[] results = this.Invoke("SpecificStudentsProfile", new object[0]);
+            return ((InformationStudent[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SpecificStudentsProfileAsync() {
+            this.SpecificStudentsProfileAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SpecificStudentsProfileAsync(object userState) {
+            if ((this.SpecificStudentsProfileOperationCompleted == null)) {
+                this.SpecificStudentsProfileOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSpecificStudentsProfileOperationCompleted);
+            }
+            this.InvokeAsync("SpecificStudentsProfile", new object[0], this.SpecificStudentsProfileOperationCompleted, userState);
+        }
+        
+        private void OnSpecificStudentsProfileOperationCompleted(object arg) {
+            if ((this.SpecificStudentsProfileCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SpecificStudentsProfileCompleted(this, new SpecificStudentsProfileCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -253,7 +1229,68 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2634.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+    public partial class InformationTeacher {
+        
+        private string contactNumberField;
+        
+        private string departmentField;
+        
+        private string emailIdField;
+        
+        private string userNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ContactNumber {
+            get {
+                return this.contactNumberField;
+            }
+            set {
+                this.contactNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Department {
+            get {
+                return this.departmentField;
+            }
+            set {
+                this.departmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EmailId {
+            get {
+                return this.emailIdField;
+            }
+            set {
+                this.emailIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string UserName {
+            get {
+                return this.userNameField;
+            }
+            set {
+                this.userNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2634.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -300,12 +1337,580 @@ namespace Student_Affaris_System.StudentsAffairsSystemServer {
     }
     
     /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2634.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer")]
+    public partial class InformationStudent {
+        
+        private string contactNumberField;
+        
+        private string departmentField;
+        
+        private string emailIdField;
+        
+        private string registerationNumberField;
+        
+        private string sectionField;
+        
+        private string studentCategoryField;
+        
+        private string userNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ContactNumber {
+            get {
+                return this.contactNumberField;
+            }
+            set {
+                this.contactNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Department {
+            get {
+                return this.departmentField;
+            }
+            set {
+                this.departmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EmailId {
+            get {
+                return this.emailIdField;
+            }
+            set {
+                this.emailIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string RegisterationNumber {
+            get {
+                return this.registerationNumberField;
+            }
+            set {
+                this.registerationNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Section {
+            get {
+                return this.sectionField;
+            }
+            set {
+                this.sectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string StudentCategory {
+            get {
+                return this.studentCategoryField;
+            }
+            set {
+                this.studentCategoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string UserName {
+            get {
+                return this.userNameField;
+            }
+            set {
+                this.userNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void StudentRegisterCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void TeacherRegisterCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void TeacherInfoCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void StudentInfoCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void SearchDeptteacherCompletedEventHandler(object sender, SearchDeptteacherCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SearchDeptteacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SearchDeptteacherCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InformationTeacher[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InformationTeacher[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void SearchDeptstudentCompletedEventHandler(object sender, SearchDeptstudentCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SearchDeptstudentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SearchDeptstudentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InformationStudent[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InformationStudent[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddAnnoucementstolistCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void viewannoucementsCompletedEventHandler(object sender, viewannoucementsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class viewannoucementsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal viewannoucementsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void isvalidstudentCompletedEventHandler(object sender, isvalidstudentCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class isvalidstudentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal isvalidstudentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int isvalidstudentResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool isvalidstudentResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void isvalidteacherCompletedEventHandler(object sender, isvalidteacherCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class isvalidteacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal isvalidteacherCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int isvalidteacherResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool isvalidteacherResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void addimagesCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void listofimagesCompletedEventHandler(object sender, listofimagesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class listofimagesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal listofimagesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public object[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((object[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddStudentDeptTeacherstoListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void ShowStudentDeptTeachersCompletedEventHandler(object sender, ShowStudentDeptTeachersCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ShowStudentDeptTeachersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ShowStudentDeptTeachersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InformationTeacher[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InformationTeacher[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddTeachersDeptStudentstoListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void ShowTeachersDeptStudentsCompletedEventHandler(object sender, ShowTeachersDeptStudentsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ShowTeachersDeptStudentsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ShowTeachersDeptStudentsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InformationStudent[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InformationStudent[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddApproveTeacherstoListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void CheckApproveTeachersCompletedEventHandler(object sender, CheckApproveTeachersCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckApproveTeachersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckApproveTeachersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool CheckApproveTeachersResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool CheckApproveTeachersResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddApproveStudentstoListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void CheckApproveStudentsCompletedEventHandler(object sender, CheckApproveStudentsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CheckApproveStudentsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CheckApproveStudentsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool CheckApproveStudentsResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool CheckApproveStudentsResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void ResetTeachersPasswordListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void ResetStudentsPasswordListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void ChkTeachersSecretQuestCompletedEventHandler(object sender, ChkTeachersSecretQuestCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChkTeachersSecretQuestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChkTeachersSecretQuestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool ChkTeachersSecretQuestResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool ChkTeachersSecretQuestResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void ChkStudentsSecretQuestCompletedEventHandler(object sender, ChkStudentsSecretQuestCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ChkStudentsSecretQuestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ChkStudentsSecretQuestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool ChkStudentsSecretQuestResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool ChkStudentsSecretQuestResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void NewTeachersPasswordCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void NewStudentsPasswordCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddTeacherstoProfileListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void AddStudentstoProfileListCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void SpecificTeachersProfileCompletedEventHandler(object sender, SpecificTeachersProfileCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SpecificTeachersProfileCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SpecificTeachersProfileCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InformationTeacher[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InformationTeacher[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void SpecificStudentsProfileCompletedEventHandler(object sender, SpecificStudentsProfileCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SpecificStudentsProfileCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SpecificStudentsProfileCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InformationStudent[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InformationStudent[])(this.results[0]));
+            }
+        }
+    }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]

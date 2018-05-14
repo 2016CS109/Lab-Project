@@ -11,6 +11,7 @@ namespace StudentsAffairsSystemServer
         public string Password;
         public string EmailId;
         public string ContactNumber;
+        public string Department;
         public string RegisterationNumber;
         public string StudentCategory;
         public string Section;

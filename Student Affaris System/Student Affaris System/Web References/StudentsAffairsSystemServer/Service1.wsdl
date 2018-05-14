@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:1760/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:1760/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:1760/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/StudentsAffairsSystemServer" />
+      <xsd:import schemaLocation="http://localhost:1760/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService1_StudentRegister_InputMessage">
@@ -18,6 +19,174 @@
   </wsdl:message>
   <wsdl:message name="IService1_TeacherRegister_OutputMessage">
     <wsdl:part name="parameters" element="tns:TeacherRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StudentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StudentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDeptteacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDeptteacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDeptteacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDeptteacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDeptstudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDeptstudent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDeptstudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDeptstudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddAnnoucementstolist_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAnnoucementstolist" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddAnnoucementstolist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAnnoucementstolistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewannoucements_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewannoucements" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewannoucements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewannoucementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isvalidstudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:isvalidstudent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isvalidstudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isvalidstudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isvalidteacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:isvalidteacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isvalidteacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isvalidteacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addimages_InputMessage">
+    <wsdl:part name="parameters" element="tns:addimages" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addimages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addimagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listofimages_InputMessage">
+    <wsdl:part name="parameters" element="tns:listofimages" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listofimages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listofimagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddStudentDeptTeacherstoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStudentDeptTeacherstoList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddStudentDeptTeacherstoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStudentDeptTeacherstoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowStudentDeptTeachers_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowStudentDeptTeachers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowStudentDeptTeachers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowStudentDeptTeachersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTeachersDeptStudentstoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTeachersDeptStudentstoList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTeachersDeptStudentstoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTeachersDeptStudentstoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowTeachersDeptStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowTeachersDeptStudents" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShowTeachersDeptStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowTeachersDeptStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddApproveTeacherstoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddApproveTeacherstoList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddApproveTeacherstoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddApproveTeacherstoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckApproveTeachers_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckApproveTeachers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckApproveTeachers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckApproveTeachersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddApproveStudentstoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddApproveStudentstoList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddApproveStudentstoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddApproveStudentstoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckApproveStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckApproveStudents" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckApproveStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckApproveStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ResetTeachersPasswordList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetTeachersPasswordList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ResetTeachersPasswordList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetTeachersPasswordListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ResetStudentsPasswordList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetStudentsPasswordList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ResetStudentsPasswordList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetStudentsPasswordListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChkTeachersSecretQuest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChkTeachersSecretQuest" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChkTeachersSecretQuest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChkTeachersSecretQuestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChkStudentsSecretQuest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChkStudentsSecretQuest" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChkStudentsSecretQuest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChkStudentsSecretQuestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewTeachersPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewTeachersPassword" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewTeachersPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewTeachersPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewStudentsPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewStudentsPassword" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewStudentsPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewStudentsPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTeacherstoProfileList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTeacherstoProfileList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTeacherstoProfileList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTeacherstoProfileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddStudentstoProfileList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStudentstoProfileList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddStudentstoProfileList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStudentstoProfileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SpecificTeachersProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:SpecificTeachersProfile" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SpecificTeachersProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SpecificTeachersProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SpecificStudentsProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:SpecificStudentsProfile" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SpecificStudentsProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SpecificStudentsProfileResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_GetData_InputMessage">
     <wsdl:part name="parameters" element="tns:GetData" />
@@ -39,6 +208,118 @@
     <wsdl:operation name="TeacherRegister">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/TeacherRegister" message="tns:IService1_TeacherRegister_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/TeacherRegisterResponse" message="tns:IService1_TeacherRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TeacherInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TeacherInfo" message="tns:IService1_TeacherInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TeacherInfoResponse" message="tns:IService1_TeacherInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudentInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/StudentInfo" message="tns:IService1_StudentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/StudentInfoResponse" message="tns:IService1_StudentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDeptteacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchDeptteacher" message="tns:IService1_SearchDeptteacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchDeptteacherResponse" message="tns:IService1_SearchDeptteacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDeptstudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchDeptstudent" message="tns:IService1_SearchDeptstudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchDeptstudentResponse" message="tns:IService1_SearchDeptstudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAnnoucementstolist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddAnnoucementstolist" message="tns:IService1_AddAnnoucementstolist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddAnnoucementstolistResponse" message="tns:IService1_AddAnnoucementstolist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewannoucements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewannoucements" message="tns:IService1_viewannoucements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewannoucementsResponse" message="tns:IService1_viewannoucements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isvalidstudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/isvalidstudent" message="tns:IService1_isvalidstudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/isvalidstudentResponse" message="tns:IService1_isvalidstudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isvalidteacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/isvalidteacher" message="tns:IService1_isvalidteacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/isvalidteacherResponse" message="tns:IService1_isvalidteacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addimages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addimages" message="tns:IService1_addimages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addimagesResponse" message="tns:IService1_addimages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listofimages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listofimages" message="tns:IService1_listofimages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listofimagesResponse" message="tns:IService1_listofimages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentDeptTeacherstoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddStudentDeptTeacherstoList" message="tns:IService1_AddStudentDeptTeacherstoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddStudentDeptTeacherstoListResponse" message="tns:IService1_AddStudentDeptTeacherstoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowStudentDeptTeachers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowStudentDeptTeachers" message="tns:IService1_ShowStudentDeptTeachers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowStudentDeptTeachersResponse" message="tns:IService1_ShowStudentDeptTeachers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTeachersDeptStudentstoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddTeachersDeptStudentstoList" message="tns:IService1_AddTeachersDeptStudentstoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddTeachersDeptStudentstoListResponse" message="tns:IService1_AddTeachersDeptStudentstoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowTeachersDeptStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowTeachersDeptStudents" message="tns:IService1_ShowTeachersDeptStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowTeachersDeptStudentsResponse" message="tns:IService1_ShowTeachersDeptStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddApproveTeacherstoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddApproveTeacherstoList" message="tns:IService1_AddApproveTeacherstoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddApproveTeacherstoListResponse" message="tns:IService1_AddApproveTeacherstoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckApproveTeachers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckApproveTeachers" message="tns:IService1_CheckApproveTeachers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckApproveTeachersResponse" message="tns:IService1_CheckApproveTeachers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddApproveStudentstoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddApproveStudentstoList" message="tns:IService1_AddApproveStudentstoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddApproveStudentstoListResponse" message="tns:IService1_AddApproveStudentstoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckApproveStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckApproveStudents" message="tns:IService1_CheckApproveStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckApproveStudentsResponse" message="tns:IService1_CheckApproveStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetTeachersPasswordList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ResetTeachersPasswordList" message="tns:IService1_ResetTeachersPasswordList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ResetTeachersPasswordListResponse" message="tns:IService1_ResetTeachersPasswordList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetStudentsPasswordList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ResetStudentsPasswordList" message="tns:IService1_ResetStudentsPasswordList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ResetStudentsPasswordListResponse" message="tns:IService1_ResetStudentsPasswordList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkTeachersSecretQuest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChkTeachersSecretQuest" message="tns:IService1_ChkTeachersSecretQuest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChkTeachersSecretQuestResponse" message="tns:IService1_ChkTeachersSecretQuest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkStudentsSecretQuest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChkStudentsSecretQuest" message="tns:IService1_ChkStudentsSecretQuest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChkStudentsSecretQuestResponse" message="tns:IService1_ChkStudentsSecretQuest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewTeachersPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewTeachersPassword" message="tns:IService1_NewTeachersPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewTeachersPasswordResponse" message="tns:IService1_NewTeachersPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewStudentsPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewStudentsPassword" message="tns:IService1_NewStudentsPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewStudentsPasswordResponse" message="tns:IService1_NewStudentsPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherstoProfileList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddTeacherstoProfileList" message="tns:IService1_AddTeacherstoProfileList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddTeacherstoProfileListResponse" message="tns:IService1_AddTeacherstoProfileList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentstoProfileList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddStudentstoProfileList" message="tns:IService1_AddStudentstoProfileList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddStudentstoProfileListResponse" message="tns:IService1_AddStudentstoProfileList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecificTeachersProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SpecificTeachersProfile" message="tns:IService1_SpecificTeachersProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SpecificTeachersProfileResponse" message="tns:IService1_SpecificTeachersProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecificStudentsProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SpecificStudentsProfile" message="tns:IService1_SpecificStudentsProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SpecificStudentsProfileResponse" message="tns:IService1_SpecificStudentsProfile_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -62,6 +343,258 @@
     </wsdl:operation>
     <wsdl:operation name="TeacherRegister">
       <soap:operation soapAction="http://tempuri.org/IService1/TeacherRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeacherInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/TeacherInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StudentInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/StudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDeptteacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchDeptteacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDeptstudent">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchDeptstudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAnnoucementstolist">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddAnnoucementstolist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewannoucements">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewannoucements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isvalidstudent">
+      <soap:operation soapAction="http://tempuri.org/IService1/isvalidstudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isvalidteacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/isvalidteacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addimages">
+      <soap:operation soapAction="http://tempuri.org/IService1/addimages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listofimages">
+      <soap:operation soapAction="http://tempuri.org/IService1/listofimages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentDeptTeacherstoList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddStudentDeptTeacherstoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowStudentDeptTeachers">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShowStudentDeptTeachers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTeachersDeptStudentstoList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddTeachersDeptStudentstoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowTeachersDeptStudents">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShowTeachersDeptStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddApproveTeacherstoList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddApproveTeacherstoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckApproveTeachers">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckApproveTeachers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddApproveStudentstoList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddApproveStudentstoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckApproveStudents">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckApproveStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetTeachersPasswordList">
+      <soap:operation soapAction="http://tempuri.org/IService1/ResetTeachersPasswordList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetStudentsPasswordList">
+      <soap:operation soapAction="http://tempuri.org/IService1/ResetStudentsPasswordList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkTeachersSecretQuest">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChkTeachersSecretQuest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkStudentsSecretQuest">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChkStudentsSecretQuest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewTeachersPassword">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewTeachersPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewStudentsPassword">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewStudentsPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherstoProfileList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddTeacherstoProfileList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStudentstoProfileList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddStudentstoProfileList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecificTeachersProfile">
+      <soap:operation soapAction="http://tempuri.org/IService1/SpecificTeachersProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecificStudentsProfile">
+      <soap:operation soapAction="http://tempuri.org/IService1/SpecificStudentsProfile" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

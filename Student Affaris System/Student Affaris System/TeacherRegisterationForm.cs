@@ -36,6 +36,7 @@ namespace Student_Affaris_System
             else
             {
                 StudentsAffairsSystemServer.Service1 StudentsAffairsSystem = new StudentsAffairsSystemServer.Service1();
+                StudentsAffairsSystem.TeacherInfo(textBox6.Text, textBox3.Text, textBox2.Text, comboBox1.Text);
                 StudentsAffairsSystem.TeacherRegister(textBox6.Text, textBox5.Text, textBox3.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, textBox7.Text);
                 MessageBox.Show("U have been Registered");
                 textBox6.Text = null; textBox5.Text = null; textBox3.Text = null; textBox2.Text = null; textBox7.Text = null; comboBox1.Text = null; comboBox2.Text = null;  textBox4.Text = null;
@@ -92,6 +93,13 @@ namespace Student_Affaris_System
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserLoginPage obj = new UserLoginPage();
+            obj.Show();
+            this.Hide();
         }
     }
 }

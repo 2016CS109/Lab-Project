@@ -52,6 +52,18 @@
     <Compile Include="AboutUs.Designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddAnnoucement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAnnoucement.Designer.cs">
+      <DependentUpon>AddAnnoucement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUploadedImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllUploadedImages.Designer.cs">
+      <DependentUpon>AllUploadedImages.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPassword.Designer.cs">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegisterationCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,18 @@
     </Compile>
     <Compile Include="StudentsRegisterationForm.Designer.cs">
       <DependentUpon>StudentsRegisterationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadImages.Designer.cs">
+      <DependentUpon>UploadImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="UserLoginPage.cs">
       <SubType>Form</SubType>
@@ -132,6 +162,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewAnnoucement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAnnoucement.Designer.cs">
+      <DependentUpon>ViewAnnoucement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Web References\StudentsAffairsSystemServer\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,6 +175,12 @@
     </Compile>
     <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAnnoucement.resx">
+      <DependentUpon>AddAnnoucement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUploadedImages.resx">
+      <DependentUpon>AllUploadedImages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -158,6 +200,9 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewPassword.resx">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisterationCategory.resx">
       <DependentUpon>RegisterationCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +211,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentsRegisterationForm.resx">
       <DependentUpon>StudentsRegisterationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadImages.resx">
+      <DependentUpon>UploadImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLoginPage.resx">
       <DependentUpon>UserLoginPage.cs</DependentUpon>
@@ -187,7 +238,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewAnnoucement.resx">
+      <DependentUpon>ViewAnnoucement.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagram3.cd" />
@@ -203,6 +258,12 @@
     <None Include="Web References\StudentsAffairsSystemServer\CompositeType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\StudentsAffairsSystemServer\InformationStudent.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StudentsAffairsSystemServer\InformationTeacher.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\StudentsAffairsSystemServer\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -215,6 +276,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\StudentsAffairsSystemServer\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\StudentsAffairsSystemServer\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -242,6 +306,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\StudentsAffairsSystemServer\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Un-known.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
